@@ -42,24 +42,24 @@ class TestWeek10(unittest.TestCase):
                          "== comparison not correct"
                          " when comparing two temperatures")
         self.assertTrue(temperature == temperature3,
-                         "== comparison not correct"
-                         " when comparing two temperatures")
+                        "== comparison not correct"
+                        " when comparing two temperatures")
         self.assertFalse(temperature == 11,
                          "== comparison not correct"
                          " when comparing temperature and number")
         self.assertTrue(temperature == 20.5,
-                         "== comparison not correct"
-                         " when comparing temperature and number")        
+                        "== comparison not correct"
+                        " when comparing temperature and number")
 
         self.assertTrue(temperature != temperature2,
-                         "!= comparison not correct"
-                         " when comparing two temperatures")
+                        "!= comparison not correct"
+                        " when comparing two temperatures")
         self.assertFalse(temperature != temperature3,
                          "!= comparison not correct"
                          " when comparing two temperatures")
         self.assertTrue(temperature != 11,
-                         "!= comparison not correct"
-                         " when comparing temperature and number")
+                        "!= comparison not correct"
+                        " when comparing temperature and number")
         self.assertFalse(temperature != 20.5,
                          "!= comparison not correct"
                          " when comparing temperature and number")           
@@ -171,7 +171,7 @@ class TestWeek10(unittest.TestCase):
         self.assertEqual(hash(Temperature(20.5)), hash(Temperature(20.5)),
                          "hash not correct")
         self.assertNotEqual(hash(Temperature(20.5)), hash(Temperature(10.5)),
-                         "hash not correct")
+                            "hash not correct")
 
     def test_11_style(self):
         """Run the linter and check that the header is there."""
